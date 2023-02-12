@@ -19,12 +19,9 @@
             placeholder="password" 
             id="password"
             name="password"
-        />
-
-    <input type="submit" class="boton" value="Iniciar Sesi&oacute;n">
-           
-
+        />       
     </div>
+    <input type="submit" class="boton" value="Iniciar Sesi&oacute;n">
 </form>
 
 <div class="acciones">
