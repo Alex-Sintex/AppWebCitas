@@ -17,7 +17,7 @@ class LoginController {
     public static function recuperar(){
         echo "Recuperar Password";
     }
-    public static function crear(){
+    public static function crearcuenta(){
         echo "Crear cuenta";
     }
 }
