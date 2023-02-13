@@ -15,3 +15,9 @@
 
     <input type="submit" class="boton" value="Enviar instrucciones">
 </form>
+
+<div class="acciones">
+    <a href="/">¿Ya tienes una cuenta? Inicia sesi&oacute;n</a>
+    <a href="/crearcuenta">¿A&uacute;n no tienes una cuenta? Crear Una</a>
+
+</div>
