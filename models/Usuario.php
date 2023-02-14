@@ -1,6 +1,7 @@
 <?php
 
-use Model\ActiveRecord;
+namespace Model;
+
 
 class Usuario extends ActiveRecord{
     //base de datos

@@ -2,7 +2,7 @@
 
 namespace Controllers;
 
-//use Model\
+use Model\Usuario;
 use MVC\Router;
 
 
@@ -22,12 +22,14 @@ class LoginController {
         echo "Recuperar Password";
     }
     public static function crearcuenta(Router $router){
+        
+        $usuario = new Usuario;
+       // debuguear($usuario);  sirve para ver datos en la pg
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $usuario = new Usuario;
         }
 
         $router->render('auth/crearcuenta', [
-            
+           'usuario'=> $usuario
         ]);
     }
 }

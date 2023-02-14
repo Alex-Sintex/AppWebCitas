@@ -1,6 +1,8 @@
 <h1 class="nombre-pagina">Crear Cuenta</h1>
 <p class="descripcion-pagina">Llena el siguiente fromulario para crear una cuenta </p>
 
+<?php debuguear($usuario); ?>
+
 <form class="formulario" action="/crearcuenta" method="post
 ">
     <div class="campo">
@@ -10,6 +12,7 @@
             id="nombre"
             name="nombre"
             placeholder="Nombre"
+            value="<?php echo s($usuario ->nombre)?>"
             />
     </div>
 
