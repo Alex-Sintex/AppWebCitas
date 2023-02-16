@@ -1,7 +1,7 @@
 <h1 class="nombre-pagina">Crear Cuenta</h1>
 <p class="descripcion-pagina">Llena el siguiente fromulario para crear una cuenta </p>
 
-<?php debuguear($usuario); ?>
+<?php //debuguear($usuario); ?>
 
 <form class="formulario" action="/crearcuenta" method="post
 ">
