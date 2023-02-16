@@ -1,7 +1,9 @@
 <h1 class="nombre-pagina">Crear Cuenta</h1>
 <p class="descripcion-pagina">Llena el siguiente fromulario para crear una cuenta </p>
 
-<?php //debuguear($usuario); ?>
+<?php 
+ include_once __DIR__."/../templates/alertas.php";
+?>
 
 <form class="formulario" action="/crearcuenta" method="post
 ">
@@ -12,7 +14,7 @@
             id="nombre"
             name="nombre"
             placeholder="Nombre"
-            value="<?php echo s($usuario ->nombre)?>"
+            value="<?php echo s($usuario ->nombre); ?>"
             />
     </div>
 
@@ -23,6 +25,7 @@
             id="apPaterno"
             name="apPaterno"
             placeholder="Apellido Paterno"
+            value="<?php echo s($usuario ->apPaterno); ?>"
             />
     </div>
 
@@ -34,6 +37,7 @@
             id="apMaterno"
             name="apMaterno"
             placeholder="Apellido Materno"
+            value="<?php echo s($usuario ->apMaterno); ?>"
             />
     </div>
 
@@ -44,6 +48,7 @@
             id="telefono"
             name="telefono"
             placeholder="telefono"
+            value="<?php echo s($usuario ->telefono); ?>"
             />
     </div>
 
@@ -55,6 +60,7 @@
             id="email"
             name="email"
             placeholder="Correo electr&oacute;nico"
+            value="<?php echo s($usuario ->email); ?>"
             />
     </div>
 

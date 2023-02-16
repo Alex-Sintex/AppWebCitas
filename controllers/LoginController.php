@@ -24,12 +24,21 @@ class LoginController {
     public static function crearcuenta(Router $router){
         
         $usuario = new Usuario;
+
+
+
        // debuguear($usuario);  sirve para ver datos en la pg
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+       //Alertas vacias  
+       $alertas = [];
+       if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $usuario->sincronizar($_POST);
+            $alertas =  $usuario->validarNuevaCuenta();
+            debuguear($alertas);
         }
 
         $router->render('auth/crearcuenta', [
-           'usuario'=> $usuario
+           'usuario'=> $usuario,
+           'alertas'=> $alertas //para mostrar en la vista
         ]);
     }
 }
